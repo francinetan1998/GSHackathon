@@ -117,7 +117,7 @@ echo '
                             <img class="card-img-top" src="assets/img/portfolio/cake.png" alt="Card image cap">
                             <div class="card-body">
                               <p class="card-text"><center><strong>Less than $10K</strong></center></p>
-                              <form method="POST" action="6_signup.php">
+                              <form method="POST" action="5_products.php">
                                 <input type="hidden" name="achievement" value="' . $achievement . '">
                                 <input type="hidden" name="investment" value="'. $investment .'">
                                 <input type="hidden" name="capital" value="Capital_A">
@@ -130,7 +130,7 @@ echo '
                             <img class="card-img-top" src="assets/img/portfolio/cake.png" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text"><center><strong>10K - 75K</strong></center></p>
-                                <form method="POST" action="6_signup.php">
+                                <form method="POST" action="5_products.php">
                                 <input type="hidden" name="achievement" value="' . $achievement . '">
                                 <input type="hidden" name="investment" value="'. $investment .'">
                                 <input type="hidden" name="capital" value="Capital_B">
@@ -143,7 +143,7 @@ echo '
                             <img class="card-img-top" src="assets/img/portfolio/cake.png" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text"><center><strong>75K - 150K</strong></center></p>
-                                <form method="POST" action="6_signup.php">
+                                <form method="POST" action="5_products.php">
                                 <input type="hidden" name="achievement" value="' . $achievement . '">
                                 <input type="hidden" name="investment" value="'. $investment .'">
                                 <input type="hidden" name="capital" value="Capital_C">
@@ -156,7 +156,7 @@ echo '
                             <img class="card-img-top" src="assets/img/portfolio/cake.png" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text"><center><strong>Above 150K</strong></center></p>
-                                <form method="POST" action="6_signup.php">
+                                <form method="POST" action="5_products.php">
                                 <input type="hidden" name="achievement" value="' . $achievement . '">
                                 <input type="hidden" name="investment" value="'. $investment .'">
                                 <input type="hidden" name="capital" value="Capital_D">
