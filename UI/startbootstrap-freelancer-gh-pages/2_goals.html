@@ -37,14 +37,19 @@
         <br>
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
-            <!-- <div class="alert alert-warning alert-dismissible">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                
-            </div> -->
-            <div class="alert alert-warning alert-dismissible">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                Everyone has dreams . . . <strong>  What is yours?</strong> 
+
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="w-50 alert alert-warning alert-dismissible">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        Everyone has dreams . . . <strong>  What is yours?</strong> 
+                    </div>
+        
+              </div>
             </div>
+
+            <br>
+
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">#1 Choose your goal</h2>
@@ -58,29 +63,41 @@
                 <div class="row">
                     <div class="card" style="width: 15rem;">
                         <img class="card-img-top" src="assets/img/portfolio/cabin.png" alt="Card image cap">
-                        <div class="card-body">
+                        <div class="card-body" style="text-align: center;">
                           <p class="card-text"><center><strong>Overseas trip</strong></center></p>
+                          <form method="POST" action="3_horizon.php">
+                              <button name="achievement" type="submit" value="Achievement_A" class="btn btn-primary">Select</button>
+                          </form>
                         </div>
                     </div>
                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     <div class="card" style="width: 15rem;">
                         <img class="card-img-top" src="assets/img/portfolio/cabin.png" alt="Card image cap">
-                        <div class="card-body">
+                        <div class="card-body" style="text-align: center;">
                             <p class="card-text"><center><strong>Car</strong></center></p>
+                            <form method="POST" action="3_horizon.php">
+                                <button name="achievement" type="submit" value="Achievement_B" class="btn btn-primary">Select</button>
+                            </form>
                         </div>
                       </div>
                       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                       <div class="card" style="width: 15rem;">
                         <img class="card-img-top" src="assets/img/portfolio/cabin.png" alt="Card image cap">
-                        <div class="card-body">
+                        <div class="card-body" style="text-align: center;">
                             <p class="card-text"><center><strong>HDB BTO</strong></center></p>
+                            <form method="POST" action="3_horizon.php">
+                                <button name="achievement" type="submit" value="Achievement_C" class="btn btn-primary">Select</button>
+                            </form>
                         </div>
                       </div>
                       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                       <div class="card" style="width: 15rem;">
                         <img class="card-img-top" src="assets/img/portfolio/cabin.png" alt="Card image cap">
-                        <div class="card-body">
+                        <div class="card-body" style="text-align: center;">
                             <p class="card-text"><center><strong>Private Housing</strong></center></p>
+                            <form method="POST" action="3_horizon.php">
+                                <button name="achievement" type="submit" value="Achievement_D" class="btn btn-primary">Select</button>
+                            </form>
                         </div>
                       </div>
                     
@@ -143,9 +160,9 @@
                 </div>
             </div>
             <br>
-            <div class="row justify-content-center">
-                <a button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit" href="1_welcome.html">Back</button></a>
-            </div>
+                <!-- <div class="row justify-content-center">
+                    <a button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit" href="3_horizon.html">Back</button></a>
+                </div> --> 
         </section>
         
 
