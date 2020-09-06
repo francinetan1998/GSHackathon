@@ -1,5 +1,7 @@
 <?php 
 
+require_once 'include/common.php';
+
 $investment = "";
 $achievement = "";
 $capital = "";
@@ -8,6 +10,23 @@ if(isset($_POST['submit'])) {
     $achievement = $_POST['achievement'];
     $capital = $_POST['capital'];
 } 
+
+$dao = new AccountDAO();
+$points = $dao->toRecommend($investment, $achievement, $capital);
+
+$depositImg = "assets/img/portfolio/deposit.png";
+$bondImg = "assets/img/portfolio/bond.png";
+$reitImg = "assets/img/portfolio/reit.png";
+$stockImg = "assets/img/portfolio/stock.png";
+
+if ($points <= 6) {
+    $depositImg = "assets/img/portfolio/depositR.png";
+    $bondImg = "assets/img/portfolio/bondR.png";
+} elseif ($points <= 9) {
+    $reitImg = "assets/img/portfolio/reitR.png";
+} else {
+    $stockImg = "assets/img/portfolio/stockR.png";
+}
 
 echo '<!DOCTYPE html>
 <html lang="en">
@@ -58,7 +77,7 @@ echo '<!DOCTYPE html>
                 <div class="row">
                     
                     <div class="card" style="width: 17rem;" data-toggle="modal" data-target="#portfolioModal1">
-                        <img class="card-img-top" src="assets/img/portfolio/bond - Copy.png" alt="Card image cap">
+                        <img class="card-img-top" src="' . $bondImg . '" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Bonds</h5>
                           <p class="card-text">Goldman Sachs’ Bond Fund invests in fixed income securities such as US government securities and corporate debt securities.</p>
@@ -67,7 +86,7 @@ echo '<!DOCTYPE html>
                     </div>
                     &nbsp&nbsp&nbsp&nbsp&nbsp
                     <div class="card" style="width: 17rem;" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="card-img-top" src="assets/img/portfolio/certificate.png" alt="Card image cap">
+                        <img class="card-img-top" src="' . $depositImg . '" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Certificate of Deposit</h5>
                           <p class="card-text">Goldman Sachs’ High Yield Certificate of Deposits are a secure form of time deposit, where money must stay in the bank for a certain length of time to earn a promised return.</p>
@@ -76,7 +95,7 @@ echo '<!DOCTYPE html>
                     </div>
                     &nbsp&nbsp&nbsp&nbsp&nbsp
                     <div class="card" style="width: 17rem;" data-toggle="modal" data-target="#portfolioModal3">
-                        <img class="card-img-top" src="assets/img/portfolio/reit - Copy.png" alt="Card image cap">
+                        <img class="card-img-top" src="' . $reitImg . '" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">REITS</h5>
                           <p class="card-text">Goldman Sachs’ Real Estate Securities Fund invests in a portfolio of equity investments whose issuers are involved in the real estate industry.</p>
@@ -85,7 +104,7 @@ echo '<!DOCTYPE html>
                     </div>
                     &nbsp&nbsp&nbsp&nbsp&nbsp
                     <div class="card" style="width: 17rem;" data-toggle="modal" data-target="#portfolioModal4">
-                        <img class="card-img-top" src="assets/img/portfolio/stock-market - Copy.png" alt="Card image cap">
+                        <img class="card-img-top" src="' . $stockImg . '" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Stocks</h5>
                           <p class="card-text">Goldman Sachs’ investment team helps develop insights and strategies to maximise profits equal to how much stock they own.</p>

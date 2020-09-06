@@ -106,6 +106,7 @@ class AccountDAO {
         $stmt = null;
         $pdo = null;
 
+        return $total;
 
     }
 }
