@@ -1,3 +1,5 @@
+<?php
+echo '
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +11,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>REITS Simulation</title>
+  <title>CoD Simulation</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -25,147 +27,147 @@
   <!-- Page Wrapper -->
   <div id="wrapper">
 
-    <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  <!-- Sidebar -->
+  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="7_dashboard.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">GS Admin <sup></sup></div>
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="7_dashboard.php">
+      <div class="sidebar-brand-icon rotate-n-15">
+        <i class="fas fa-laugh-wink"></i>
+      </div>
+      <div class="sidebar-brand-text mx-3">GS Admin <sup></sup></div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+      <a class="nav-link" href="7_dashboard.php">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Dashboard</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+      Learn
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Bonds</span>
       </a>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link" href="7_dashboard.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Learn
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Explore:</h6>
+          <a class="collapse-item" href="8a_bonds.php">Guide</a>
+          <a class="collapse-item" href="8b_bonds.php">Simulation</a>
+        </div>
       </div>
+    </li>
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Bonds</span>
-        </a>
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Explore:</h6>
-            <a class="collapse-item" href="8a_bonds.html">Guide</a>
-            <a class="collapse-item" href="8b_bonds.html">Simulation</a>
-          </div>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fas fa-fw fa-dollar-sign"></i>
+        <span>REITS</span>
+      </a>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Explore:</h6>
+          <a class="collapse-item" href="9a_reits.php">Guide</a>
+          <a class="collapse-item" href="9b_reits.php">Simulation</a>
         </div>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-dollar-sign"></i>
-          <span>REITS</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Explore:</h6>
-            <a class="collapse-item" href="9a_reits.html">Guide</a>
-            <a class="collapse-item" href="9b_reits.html">Simulation</a>
-          </div>
-        </div>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-          <i class="fas fa-fw fa-file-alt"></i>
-          <span>Certificate of Deposit</span>
-        </a>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Explore:</h6>
-            <a class="collapse-item" href="10a_cod.html">Guide</a>
-            <a class="collapse-item" href="10b_cod.html">Simulation</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Stocks</span>
-        </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Explore:</h6>
-            <a class="collapse-item" href="11a_stocks.html">Guide</a>
-            <a class="collapse-item" href="11b_stocks.html">Simulation</a>
-            <!-- <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a> -->
-          </div>
-        </div>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Information
       </div>
+    </li>
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <!-- <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
-          </div>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+        <i class="fas fa-fw fa-file-alt"></i>
+        <span>Certificate of Deposit</span>
+      </a>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Explore:</h6>
+          <a class="collapse-item" href="10a_cod.php">Guide</a>
+          <a class="collapse-item" href="10b_cod.php">Simulation</a>
         </div>
-      </li> -->
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="12_markets.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Markets</span></a>
-      </li>
-
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="13_news.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>News</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
+    </li>
 
-    </ul>
-    <!-- End of Sidebar -->
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+        <i class="fas fa-fw fa-chart-area"></i>
+        <span>Stocks</span>
+      </a>
+      <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Explore:</h6>
+          <a class="collapse-item" href="11a_stocks.php">Guide</a>
+          <a class="collapse-item" href="11b_stocks.php">Simulation</a>
+          <!-- <a class="collapse-item" href="utilities-animation.html">Animations</a>
+          <a class="collapse-item" href="utilities-other.html">Other</a> -->
+        </div>
+      </div>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+      Information
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <!-- <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Pages</span>
+      </a>
+      <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Login Screens:</h6>
+          <a class="collapse-item" href="login.html">Login</a>
+          <a class="collapse-item" href="register.html">Register</a>
+          <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+          <div class="collapse-divider"></div>
+          <h6 class="collapse-header">Other Pages:</h6>
+          <a class="collapse-item" href="404.html">404 Page</a>
+          <a class="collapse-item" href="blank.html">Blank Page</a>
+        </div>
+      </div>
+    </li> -->
+
+    <!-- Nav Item - Charts -->
+    <li class="nav-item">
+      <a class="nav-link" href="12_markets.php">
+        <i class="fas fa-fw fa-chart-area"></i>
+        <span>Stock Finder</span></a>
+    </li>
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+      <a class="nav-link" href="13_news.php">
+        <i class="fas fa-fw fa-table"></i>
+        <span>News</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+      <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+  </ul>
+  <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -258,7 +260,7 @@
                   </div>
                   <div>
                     <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
+                    Spending Alert: Weve noticed unusually high spending for your account.
                   </div>
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
@@ -283,7 +285,7 @@
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div class="font-weight-bold">
-                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem Ive been having.</div>
                     <div class="small text-gray-500">Emily Fowler · 58m</div>
                   </div>
                 </a>
@@ -303,7 +305,7 @@
                     <div class="status-indicator bg-warning"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                    <div class="text-truncate">Last months report looks great, I am very happy with the progress so far, keep up the good work!</div>
                     <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                   </div>
                 </a>
@@ -313,7 +315,7 @@
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they arent good...</div>
                     <div class="small text-gray-500">Chicken the Dog · 2w</div>
                   </div>
                 </a>
@@ -360,24 +362,24 @@
         <div class="container-fluid">
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">REITS Simulation</h1>
+            <h1 class="h3 mb-0 text-gray-800">Certificate of Deposit Simulation</h1>
             <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-comments fa-sm text-white-50"></i> Chat</a> -->
           </div>
 
           <!-- Content Row -->
           <div class="row">
 
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
+             <!-- Earnings (Monthly) Card Example -->
+             <div class="col-xl-3 col-md-6 mb-4">
               <div class="card border-left-primary shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Holdings</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$35,847</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Initial Deposit</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">$7,000</div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
                     </div>
                   </div>
                 </div>
@@ -390,11 +392,11 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Today's Gain</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$82 (+1.9%)</div>
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Duration</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">6 Years</div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
                     </div>
                   </div>
                 </div>
@@ -407,20 +409,20 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total Gain</div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Rate</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">$7,382 (+21.4%)</div>
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">0.9 %</div>
                         </div>
                         <div class="col">
                           <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                      <i class="fas fa-chart-area fa-2x text-gray-300"></i>
                     </div>
                   </div>
                 </div>
@@ -445,7 +447,7 @@
             </div> -->
           </div>
           <!-- Page Heading -->
-          <!-- <h1 class="h3 mb-2 text-gray-800">REITS Simulation</h1> -->
+          <!-- <h1 class="h3 mb-2 text-gray-800">Certificate of Deposit Simulation</h1> -->
           <!-- <p class="mb-4">Chart.js is a third party plugin that is used to generate the charts in this theme. The charts below have been customized - for further customization options, please visit the <a target="_blank" href="https://www.chartjs.org/docs/latest/">official Chart.js documentation</a>.</p> -->
 
           <!-- Content Row -->
@@ -454,54 +456,57 @@
             <div class="col-xl-8 col-lg-7">
 
               <!-- Area Chart -->
-              <div class="card shadow mb-4">
+              <!-- <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">MapleFee Industrial</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
                 </div>
                 <div class="card-body">
                   <div class="chart-area">
                     <canvas id="myAreaChart"></canvas>
                   </div>
                   <hr>
-                  <code>The graph above depicts the value of MapleFee Industrial REIT in a hypothetical scenario.</code>
+                  Styling for the area chart can be found in the <code>/js/demo/chart-area-demo.js</code> file.
                 </div>
-              </div>
+              </div> -->
 
               <!-- Bar Chart -->
-              <!-- <div class="card shadow mb-4">
+              <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">CoD 22P</h6>
                 </div>
                 <div class="card-body">
                   <div class="chart-bar">
                     <canvas id="myBarChart"></canvas>
                   </div>
                   <hr>
-                  Styling for the bar chart can be found in the <code>/js/demo/chart-bar-demo.js</code> file.
+                  
                 </div>
-              </div> -->
+              </div>
 
             </div>
 
-                        <!-- Donut Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                          <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3">
-                              <center><h6 class="m-0 font-weight-bold text-primary">How do i read the graph?</h6></center>
-                            </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                              <div class="chart-pie pt-4">
-                              
-                                <!-- <canvas id="myPieChart"></canvas> -->
-                              </div>
-                              <hr>
-                              <code>The graph above depicts the value of Teska Stock in a hypothetical scenario.</code>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            <!-- Donut Chart -->
+            <div class="col-xl-4 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3">
+                  <center><h6 class="m-0 font-weight-bold text-primary">How do i read the graph?</h6></center>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-pie pt-4">
+                  The graph shows the projected growth of an investment of USD 7,000 into Certificate of Deposit CoD 22P over a 6-year period. 
+                    <!-- <canvas id="myPieChart"></canvas> -->
+                    <br><br><br><br><br><br><code>Disclaimer: The graph is a projection of the growth in investment. Actual performance is subject to market and  risks.</code>
+                    
+                  </div>
+                  
+                  <hr>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
         <!-- /.container-fluid -->
@@ -565,8 +570,9 @@
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
-  <script src="js/demo/chart-bar-demo.js"></script>
+  <script src="js/demo/chart-bars2-demo.js"></script>
 
 </body>
 
-</html>
+</html>';
+?>

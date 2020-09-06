@@ -1,3 +1,5 @@
+<?php
+echo '
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +11,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>CoD Guide</title>
+  <title>Stocks Guide</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -25,147 +27,147 @@
   <!-- Page Wrapper -->
   <div id="wrapper">
 
-    <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  <!-- Sidebar -->
+  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="7_dashboard.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">GS Admin <sup></sup></div>
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="7_dashboard.php">
+      <div class="sidebar-brand-icon rotate-n-15">
+        <i class="fas fa-laugh-wink"></i>
+      </div>
+      <div class="sidebar-brand-text mx-3">GS Admin <sup></sup></div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+      <a class="nav-link" href="7_dashboard.php">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Dashboard</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+      Learn
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Bonds</span>
       </a>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link" href="7_dashboard.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Learn
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Explore:</h6>
+          <a class="collapse-item" href="8a_bonds.php">Guide</a>
+          <a class="collapse-item" href="8b_bonds.php">Simulation</a>
+        </div>
       </div>
+    </li>
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Bonds</span>
-        </a>
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Explore:</h6>
-            <a class="collapse-item" href="8a_bonds.html">Guide</a>
-            <a class="collapse-item" href="8b_bonds.html">Simulation</a>
-          </div>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fas fa-fw fa-dollar-sign"></i>
+        <span>REITS</span>
+      </a>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Explore:</h6>
+          <a class="collapse-item" href="9a_reits.php">Guide</a>
+          <a class="collapse-item" href="9b_reits.php">Simulation</a>
         </div>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-dollar-sign"></i>
-          <span>REITS</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Explore:</h6>
-            <a class="collapse-item" href="9a_reits.html">Guide</a>
-            <a class="collapse-item" href="9b_reits.html">Simulation</a>
-          </div>
-        </div>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-          <i class="fas fa-fw fa-file-alt"></i>
-          <span>Certificate of Deposit</span>
-        </a>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Explore:</h6>
-            <a class="collapse-item" href="10a_cod.html">Guide</a>
-            <a class="collapse-item" href="10b_cod.html">Simulation</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Stocks</span>
-        </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Explore:</h6>
-            <a class="collapse-item" href="11a_stocks.html">Guide</a>
-            <a class="collapse-item" href="11b_stocks.html">Simulation</a>
-            <!-- <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a> -->
-          </div>
-        </div>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Information
       </div>
+    </li>
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <!-- <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
-          </div>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+        <i class="fas fa-fw fa-file-alt"></i>
+        <span>Certificate of Deposit</span>
+      </a>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Explore:</h6>
+          <a class="collapse-item" href="10a_cod.php">Guide</a>
+          <a class="collapse-item" href="10b_cod.php">Simulation</a>
         </div>
-      </li> -->
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="12_markets.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Markets</span></a>
-      </li>
-
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="13_news.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>News</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
+    </li>
 
-    </ul>
-    <!-- End of Sidebar -->
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+        <i class="fas fa-fw fa-chart-area"></i>
+        <span>Stocks</span>
+      </a>
+      <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Explore:</h6>
+          <a class="collapse-item" href="11a_stocks.php">Guide</a>
+          <a class="collapse-item" href="11b_stocks.php">Simulation</a>
+          <!-- <a class="collapse-item" href="utilities-animation.html">Animations</a>
+          <a class="collapse-item" href="utilities-other.html">Other</a> -->
+        </div>
+      </div>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+      Information
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <!-- <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Pages</span>
+      </a>
+      <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Login Screens:</h6>
+          <a class="collapse-item" href="login.html">Login</a>
+          <a class="collapse-item" href="register.html">Register</a>
+          <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+          <div class="collapse-divider"></div>
+          <h6 class="collapse-header">Other Pages:</h6>
+          <a class="collapse-item" href="404.html">404 Page</a>
+          <a class="collapse-item" href="blank.html">Blank Page</a>
+        </div>
+      </div>
+    </li> -->
+
+    <!-- Nav Item - Charts -->
+    <li class="nav-item">
+      <a class="nav-link" href="12_markets.php">
+        <i class="fas fa-fw fa-chart-area"></i>
+        <span>Stock Finder</span></a>
+    </li>
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+      <a class="nav-link" href="13_news.php">
+        <i class="fas fa-fw fa-table"></i>
+        <span>News</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+      <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+  </ul>
+  <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -258,7 +260,7 @@
                   </div>
                   <div>
                     <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
+                    Spending Alert: Weve noticed unusually high spending for your account.
                   </div>
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
@@ -283,7 +285,7 @@
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div class="font-weight-bold">
-                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem Ive been having.</div>
                     <div class="small text-gray-500">Emily Fowler · 58m</div>
                   </div>
                 </a>
@@ -303,7 +305,7 @@
                     <div class="status-indicator bg-warning"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                    <div class="text-truncate">Last months report looks great, I am very happy with the progress so far, keep up the good work!</div>
                     <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                   </div>
                 </a>
@@ -313,7 +315,7 @@
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they arent good...</div>
                     <div class="small text-gray-500">Chicken the Dog · 2w</div>
                   </div>
                 </a>
@@ -361,7 +363,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Certificate of Deposit Guide</h1>
+            <h1 class="h3 mb-0 text-gray-800">Stocks Guide</h1>
           </div>
 
           <div class="row">
@@ -454,7 +456,7 @@
                   What is it?
                 </div>
                 <div class="card-body">
-                  Goldman Sachs’ High Yield Certificate of Deposits are a secure form of time deposit, where money must stay in the bank for a certain length of time to earn a promised return.
+                  From macroeconomic forecasts to individual stock analysis, Goldman Sachs’ investment team helps develop insights and strategies to maximise profits equal to how much stock they own.
                 </div>
               </div>
 
@@ -464,17 +466,16 @@
                   <h6 class="m-0 font-weight-bold text-primary">How does it work?</h6>
                 </div>
                 <div class="card-body">
-                  A High Yield CD can be a useful tool for long- term financial goals such as renovation, child’s future education
-<br><br>10 Day CD Rate Guarantee (If rate goes up, you will get the new improved rate automatically) <br>
-
+                  Goldman Sachs’ analyst’s recommendation and stock pick lists the most recent publicly-reported stock recommendations and ratings issued by analysts at Goldman Sachs Group. 
+<br>*The stock list is non exhaustive.
+<br><br>
+Capital: Prices as listed
 <br>
-Capital: Minimum of $500
+Expected Returns: YTD on individual stocks 
 <br>
-Expected Return: 0.45% - 0.90% APY
-<br>
-Risk: Conservative 
-<br>
-Strategy: Yield
+Risk: Aggressive
+ <br>
+Strategy: Capital Gain
 
                 </div>
               </div>
@@ -517,10 +518,18 @@ Strategy: Yield
                 <div class="collapse show" id="collapseCardExample">
                   <div class="card-body">
                     <ul>
-                      <li>Federal Reserve</li>
-                      <li>Interest Rates</li>
-                      <li>APY</li>
-                      <li>Types of CD</li>
+                      <li>New York Stock Exchange</li>
+                      <li>Bear</li>
+                      <li>Bull</li>
+                      <li>Volatility</li>
+                      <li>Shares</li>
+                      <li>Federal Reserves</li>
+                      <li>Covid-19</li>
+                      <li>Bid</li>
+                      <li>Close</li>
+                      <li>Spread</li>
+                      <li>Stock Symbol</li>
+                      <li>Volume</li>
                   </ul>
                   </div>
                 </div>
@@ -588,4 +597,5 @@ Strategy: Yield
 
 </body>
 
-</html>
+</html>';
+?>

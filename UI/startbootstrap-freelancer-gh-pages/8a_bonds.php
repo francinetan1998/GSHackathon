@@ -1,14 +1,6 @@
 <?php
-
-require_once 'include/common.php';
-
-$results_string = "";
-if(isset($_SESSION['results'])){
-    $results_string = $_SESSION['results'];
-    unset($_SESSION['results']);
-}
-
-echo '<!DOCTYPE html>
+echo '
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,7 +11,7 @@ echo '<!DOCTYPE html>
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Blank</title>
+  <title>Bonds Guide</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -194,7 +186,7 @@ echo '<!DOCTYPE html>
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search Keyword" aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fas fa-search fa-sm"></i>
@@ -268,7 +260,7 @@ echo '<!DOCTYPE html>
                   </div>
                   <div>
                     <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We\'ve noticed unusually high spending for your account.
+                    Spending Alert: Weve noticed unusually high spending for your account.
                   </div>
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
@@ -293,7 +285,7 @@ echo '<!DOCTYPE html>
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div class="font-weight-bold">
-                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I\'ve been having.</div>
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem Ive been having.</div>
                     <div class="small text-gray-500">Emily Fowler · 58m</div>
                   </div>
                 </a>
@@ -313,7 +305,7 @@ echo '<!DOCTYPE html>
                     <div class="status-indicator bg-warning"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Last month\'s report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                    <div class="text-truncate">Last months report looks great, I am very happy with the progress so far, keep up the good work!</div>
                     <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                   </div>
                 </a>
@@ -323,7 +315,7 @@ echo '<!DOCTYPE html>
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren\'t good...</div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they arent good...</div>
                     <div class="small text-gray-500">Chicken the Dog · 2w</div>
                   </div>
                 </a>
@@ -369,30 +361,180 @@ echo '<!DOCTYPE html>
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-            <!-- Page Heading -->
-            <h1 class="h3 mb-4 text-gray-800">Stock Finder</h1>
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Bonds Guide</h1>
+          </div>
 
-            <p class="mb-4">Search for stocks information!</p>
+          <div class="row">
 
-            <form method="POST" action="processStockSearch.php" >
-                <div class="main">
-            
-                <!-- Another variation with a button -->
-                <div class="input-group">
-            
-                    <input name="symbol" type="text" class="form-control" placeholder="Search for a stock based on its symbol">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary" type="submit">
-                            <i class="fa fa-search"></i>
-                        </button>
-                
+            <!-- Earnings (Monthly) Card Example -->
+            <!-- <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                     </div>
+                    <div class="col-auto">
+                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
                 </div>
-            </form>
+              </div>
+            </div> -->
 
-            <br>
-            
-            ' . $results_string . '
+            <!-- Earnings (Annual) Card Example -->
+            <!-- <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- Tasks Card Example -->
+            <!-- <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                        </div>
+                        <div class="col">
+                          <div class="progress progress-sm mr-2">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- Pending Requests Card Example -->
+            <!-- <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pending Requests</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-comments fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="row">
+
+            <div class="col-lg-6">
+
+              <!-- Default Card Example -->
+              <div class="card mb-4">
+                <div class="card-header">
+                  What is it?
+                </div>
+                <div class="card-body">
+                  Goldman Sachs’ Bond Fund invests in fixed income securities such as US government securities and corporate debt securities.
+                </div>
+              </div>
+
+              <!-- Basic Card Example -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">How does it work?</h6>
+                </div>
+                <div class="card-body">
+                  The Goldman Sachs Bond Fund seeks to help investors achieve high yield while managing their risks. It also has high liquidity due to its low volatility.
+                  <br><br>
+                    Average Annual Total Return (for period ended Dec 31 2019)
+                    <ul><li>1 year = 5.96%</li>
+                      <li>5 years = 1.92%</li>
+                      <li>10 years = 3.67%</li></ul>
+                      
+                    Capital: Minimum of $1,000
+                      <br>
+                    Risk: Conservative 
+                      <br>
+                    Strategy: Yield
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+              <!-- Dropdown Card Example -->
+              <!-- <div class="card shadow mb-4"> -->
+                <!-- Card Header - Dropdown -->
+                <!-- <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Dropdown Card Example</h6>
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Dropdown Header:</div>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- Card Body -->
+                <!-- <div class="card-body">
+                  Dropdown menus can be placed in the card header in order to extend the functionality of a basic card. In this dropdown card example, the Font Awesome vertical ellipsis icon in the card header can be clicked on in order to toggle a dropdown menu.
+                </div>
+              </div> -->
+
+              <!-- Collapsable Card Example -->
+              <div class="card shadow mb-4">
+                <!-- Card Header - Accordion -->
+                <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                  <h6 class="m-0 font-weight-bold text-primary">Keywords</h6>
+                </a>
+                <!-- Card Content - Collapse -->
+                <div class="collapse show" id="collapseCardExample">
+                  <div class="card-body">
+                    <ul>
+                      <li>Coupon</li>
+                      <li>Price</li>
+                      <li>Maturity</li>
+                      <li>Basis Points</li>
+                      <li>Bells and Whistles</li>
+                      <li>Yield</li>
+                      <li>Bond Issuer</li>
+                      <li>Corporate Debt</li>
+                      <li>Fixed Income Securities</li>
+                  </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
 
           </div>
 
@@ -403,7 +545,13 @@ echo '<!DOCTYPE html>
       <!-- End of Main Content -->
 
       <!-- Footer -->
-      
+      <!-- <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2020</span>
+          </div>
+        </div>
+      </footer> -->
       <!-- End of Footer -->
 
     </div>
@@ -449,6 +597,4 @@ echo '<!DOCTYPE html>
 </body>
 
 </html>';
-
-
 ?>

@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
         $_SESSION['loggedin'] = True;
         $_SESSION['uid'] = $status;
 
-        header("Location: 7_dashboard.html");
+        header("Location: 7_dashboard.php");
     
         return;
 

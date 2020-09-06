@@ -1,3 +1,5 @@
+<?php
+echo '
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +11,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Stocks Simulation</title>
+  <title>Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -29,7 +31,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="7_dashboard.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="7_dashboard.php">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
@@ -41,7 +43,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="7_dashboard.html">
+        <a class="nav-link" href="7_dashboard.php">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -63,8 +65,8 @@
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Explore:</h6>
-            <a class="collapse-item" href="8a_bonds.html">Guide</a>
-            <a class="collapse-item" href="8b_bonds.html">Simulation</a>
+            <a class="collapse-item" href="8a_bonds.php">Guide</a>
+            <a class="collapse-item" href="8b_bonds.php">Simulation</a>
           </div>
         </div>
       </li>
@@ -77,8 +79,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Explore:</h6>
-            <a class="collapse-item" href="9a_reits.html">Guide</a>
-            <a class="collapse-item" href="9b_reits.html">Simulation</a>
+            <a class="collapse-item" href="9a_reits.php">Guide</a>
+            <a class="collapse-item" href="9b_reits.php">Simulation</a>
           </div>
         </div>
       </li>
@@ -91,8 +93,8 @@
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Explore:</h6>
-            <a class="collapse-item" href="10a_cod.html">Guide</a>
-            <a class="collapse-item" href="10b_cod.html">Simulation</a>
+            <a class="collapse-item" href="10a_cod.php">Guide</a>
+            <a class="collapse-item" href="10b_cod.php">Simulation</a>
           </div>
         </div>
       </li>
@@ -106,8 +108,8 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Explore:</h6>
-            <a class="collapse-item" href="11a_stocks.html">Guide</a>
-            <a class="collapse-item" href="11b_stocks.html">Simulation</a>
+            <a class="collapse-item" href="11a_stocks.php">Guide</a>
+            <a class="collapse-item" href="11b_stocks.php">Simulation</a>
             <!-- <a class="collapse-item" href="utilities-animation.html">Animations</a>
             <a class="collapse-item" href="utilities-other.html">Other</a> -->
           </div>
@@ -144,14 +146,14 @@
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="12_markets.html">
+        <a class="nav-link" href="12_markets.php">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Markets</span></a>
+          <span>Stock Finder</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="13_news.html">
+        <a class="nav-link" href="13_news.php">
           <i class="fas fa-fw fa-table"></i>
           <span>News</span></a>
       </li>
@@ -258,7 +260,7 @@
                   </div>
                   <div>
                     <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
+                    Spending Alert: Weve noticed unusually high spending for your account.
                   </div>
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
@@ -283,7 +285,7 @@
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div class="font-weight-bold">
-                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem Ive been having.</div>
                     <div class="small text-gray-500">Emily Fowler · 58m</div>
                   </div>
                 </a>
@@ -303,7 +305,7 @@
                     <div class="status-indicator bg-warning"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                    <div class="text-truncate">Last months report looks great, I am very happy with the progress so far, keep up the good work!</div>
                     <div class="small text-gray-500">Morgan Alvarez · 2d</div>
                   </div>
                 </a>
@@ -313,7 +315,7 @@
                     <div class="status-indicator bg-success"></div>
                   </div>
                   <div>
-                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they arent good...</div>
                     <div class="small text-gray-500">Chicken the Dog · 2w</div>
                   </div>
                 </a>
@@ -358,10 +360,11 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Stocks Simulation</h1>
-            <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-comments fa-sm text-white-50"></i> Chat</a> -->
+            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-comments fa-sm text-white-50"></i> Chat</a>
           </div>
 
           <!-- Content Row -->
@@ -373,8 +376,8 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Holdings</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$35,847</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Savings</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">$200,000</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -390,8 +393,8 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Today's Gain</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$82 (+1.9%)</div>
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Investments</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">$37,000</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -407,10 +410,10 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total Gain</div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Goal Progress</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">$7,382 (+21.4%)</div>
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">85%</div>
                         </div>
                         <div class="col">
                           <div class="progress progress-sm mr-2">
@@ -427,9 +430,8 @@
               </div>
             </div>
 
-
             <!-- Pending Requests Card Example -->
-            <!-- <div class="col-xl-3 col-md-6 mb-4">
+            <div class="col-xl-3 col-md-6 mb-4">
               <div class="card border-left-warning shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
@@ -443,66 +445,215 @@
                   </div>
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
-          <!-- Page Heading -->
-          <!-- <h1 class="h3 mb-2 text-gray-800">Stocks Simulation</h1> -->
-          <!-- <p class="mb-4">Chart.js is a third party plugin that is used to generate the charts in this theme. The charts below have been customized - for further customization options, please visit the <a target="_blank" href="https://www.chartjs.org/docs/latest/">official Chart.js documentation</a>.</p> -->
 
           <!-- Content Row -->
+
           <div class="row">
 
+            <!-- Area Chart -->
             <div class="col-xl-8 col-lg-7">
-
-              <!-- Area Chart -->
               <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Teska Stock (T05)</h6>
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Dropdown Header:</div>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
                 </div>
+                <!-- Card Body -->
                 <div class="card-body">
                   <div class="chart-area">
                     <canvas id="myAreaChart"></canvas>
                   </div>
-                  <hr>
-                  <code>The graph above depicts the value of Teska Stock in a hypothetical scenario.</code>
                 </div>
               </div>
+            </div>
 
-              <!-- Bar Chart -->
-              <!-- <div class="card shadow mb-4">
+            <!-- Pie Chart -->
+            <div class="col-xl-4 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Portfolio Breakdown</h6>
+                  <div class="dropdown no-arrow">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-header">Dropdown Header:</div>
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-pie pt-4 pb-2">
+                    <canvas id="myPieChart"></canvas>
+                  </div>
+                  <div class="mt-4 text-center small">
+                    <span class="mr-2">
+                      <i class="fas fa-circle text-primary"></i> Savings
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle text-success"></i> Investments
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle text-info"></i> CPF
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- Content Column -->
+            <!-- <div class="col-lg-6 mb-4"> -->
+
+              <!-- Project Card Example
+              <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
                 </div>
                 <div class="card-body">
-                  <div class="chart-bar">
-                    <canvas id="myBarChart"></canvas>
+                  <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <hr>
-                  Styling for the bar chart can be found in the <code>/js/demo/chart-bar-demo.js</code> file.
+                  <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Payout Details <span class="float-right">80%</span></h4>
+                  <div class="progress mb-4">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <h4 class="small font-weight-bold">Account Setup <span class="float-right">Complete!</span></h4>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
                 </div>
               </div> -->
 
-            </div>
+              <!-- Color System
+              <div class="row">
+                <div class="col-lg-6 mb-4">
+                  <div class="card bg-primary text-white shadow">
+                    <div class="card-body">
+                      Primary
+                      <div class="text-white-50 small">#4e73df</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card bg-success text-white shadow">
+                    <div class="card-body">
+                      Success
+                      <div class="text-white-50 small">#1cc88a</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card bg-info text-white shadow">
+                    <div class="card-body">
+                      Info
+                      <div class="text-white-50 small">#36b9cc</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card bg-warning text-white shadow">
+                    <div class="card-body">
+                      Warning
+                      <div class="text-white-50 small">#f6c23e</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card bg-danger text-white shadow">
+                    <div class="card-body">
+                      Danger
+                      <div class="text-white-50 small">#e74a3b</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card bg-secondary text-white shadow">
+                    <div class="card-body">
+                      Secondary
+                      <div class="text-white-50 small">#858796</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card bg-light text-black shadow">
+                    <div class="card-body">
+                      Light
+                      <div class="text-black-50 small">#f8f9fc</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <div class="card bg-dark text-white shadow">
+                  <div class="card-body">
+                      Dark
+                      <div class="text-white-50 small">#5a5c69</div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
 
-                        <!-- Donut Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                          <div class="card shadow mb-4">
-                            <!-- Card Header - Dropdown -->
-                            <div class="card-header py-3">
-                              <center><h6 class="m-0 font-weight-bold text-primary">How do i read the graph?</h6></center>
-                            </div>
-                            <!-- Card Body -->
-                            <div class="card-body">
-                              <div class="chart-pie pt-4">
-                              
-                                <!-- <canvas id="myPieChart"></canvas> -->
-                              </div>
-                              <hr>
-                              Styling for the donut chart can be found in the <code>/js/demo/chart-pie-demo.js</code> file.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            <!-- </div> -->
+
+            <!-- <div class="col-lg-6 mb-4"> -->
+
+              <!-- Illustrations -->
+              <!-- <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
+                </div>
+                <div class="card-body">
+                  <div class="text-center">
+                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/undraw_posting_photo.svg" alt="">
+                  </div>
+                  <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
+                  <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw &rarr;</a>
+                </div>
+              </div> -->
+
+              <!-- Approach -->
+              <!-- <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
+                </div>
+                <div class="card-body">
+                  <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes.</p>
+                  <p class="mb-0">Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
+                </div>
+              </div> -->
+
+            <!-- </div> -->
+          </div>
 
         </div>
         <!-- /.container-fluid -->
@@ -565,9 +716,9 @@
 
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
-  <script src="js/demo/chart-bar-demo.js"></script>
+  <script src="js/demo/chart-pies-demo.js"></script>
 
 </body>
 
-</html>
+</html>';
+?>
