@@ -2,18 +2,7 @@
 
 require_once 'include/common.php';
 
-$error_string = "";
-if(isset($_SESSION['errors'])){
-    $error_string = '<div class="container">
-    <div class="row justify-content-md-center">
-        <div class="w-50 alert alert-warning alert-dismissible">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            ' . $_SESSION['errors'] . '
-        </div>
-  </div>
-</div><br>';
-    unset($_SESSION['errors']);
-}
+$error_string = printErrors();
 
 echo '
 <!DOCTYPE html>

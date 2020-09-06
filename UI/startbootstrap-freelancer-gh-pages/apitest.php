@@ -35,12 +35,13 @@ function callAPI($method, $url, $data){
 }
 
 $data = array(
-    'q' => 'bitcoin',
-    'from' => '2020-08-06',
+    'category' => 'business',
     'sortBy' => 'publishedAt',
     'apiKey' => 'daa1f687c4e149de9f5a46ab6604003c'
 );
 
-echo callAPI("GET", "http://newsapi.org/v2/everything?q=bitcoin&from=2020-08-06&sortBy=published", $data);
+$results = json_decode(callAPI("GET", "http://newsapi.org/v2/everything?q=bitcoin&from=2020-08-06&sortBy=published", $data), true);
+
+print_r($results["articles"]);
 
 ?>
