@@ -117,7 +117,7 @@ echo '
                               <form method="POST" action="4_capital.php">
                                 <input type="hidden" name="achievement" value="' . $achievement . '">
                                 <input type="hidden" name="investment" value="Investment_A">
-                                <input name="submit" type="submit" value="submit" class="btn btn-primary">
+                                <center><input name="submit" type="submit" value="submit" class="btn btn-primary"></center>
                               </form>
                             </div>
                         </div>
@@ -129,7 +129,7 @@ echo '
                                 <form method="POST" action="4_capital.php">
                                 <input type="hidden" name="achievement" value="' . $achievement . '">
                                 <input type="hidden" name="investment" value="Investment_B">
-                                <input name="submit" type="submit" value="submit" class="btn btn-primary">
+                                <center><input name="submit" type="submit" value="submit" class="btn btn-primary"></center>
                               </form>
                             </div>
                           </div>
@@ -141,7 +141,7 @@ echo '
                                 <form method="POST" action="4_capital.php">
                                 <input type="hidden" name="achievement" value="' . $achievement . '">
                                 <input type="hidden" name="investment" value="Investment_C">
-                                <input name="submit" type="submit" value="submit" class="btn btn-primary">
+                                <center><input name="submit" type="submit" value="submit" class="btn btn-primary"></center>
                               </form>
                             </div>
                           </div>
@@ -153,7 +153,7 @@ echo '
                                 <form method="POST" action="4_capital.php">
                                 <input type="hidden" name="achievement" value="' . $achievement . '">
                                 <input type="hidden" name="investment" value="Investment_D">
-                                <input name="submit" type="submit" value="submit" class="btn btn-primary">
+                                <center><input name="submit" type="submit" value="submit" class="btn btn-primary"></center>
                               </form>
                             </div>
                           </div>

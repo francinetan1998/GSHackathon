@@ -121,7 +121,7 @@ echo '
                                 <input type="hidden" name="achievement" value="' . $achievement . '">
                                 <input type="hidden" name="investment" value="'. $investment .'">
                                 <input type="hidden" name="capital" value="Capital_A">
-                                <input name="submit" type="submit" value="submit" class="btn btn-primary">
+                                <center><input name="submit" type="submit" value="submit" class="btn btn-primary"></center>
                               </form>
                             </div>
                         </div>
@@ -134,7 +134,7 @@ echo '
                                 <input type="hidden" name="achievement" value="' . $achievement . '">
                                 <input type="hidden" name="investment" value="'. $investment .'">
                                 <input type="hidden" name="capital" value="Capital_B">
-                                <input name="submit" type="submit" value="submit" class="btn btn-primary">
+                                <center><input name="submit" type="submit" value="submit" class="btn btn-primary"></center>
                               </form>
                             </div>
                           </div>
@@ -147,7 +147,7 @@ echo '
                                 <input type="hidden" name="achievement" value="' . $achievement . '">
                                 <input type="hidden" name="investment" value="'. $investment .'">
                                 <input type="hidden" name="capital" value="Capital_C">
-                                <input name="submit" type="submit" value="submit" class="btn btn-primary">
+                                <center><input name="submit" type="submit" value="submit" class="btn btn-primary"></center>
                               </form>
                             </div>
                           </div>
@@ -160,7 +160,7 @@ echo '
                                 <input type="hidden" name="achievement" value="' . $achievement . '">
                                 <input type="hidden" name="investment" value="'. $investment .'">
                                 <input type="hidden" name="capital" value="Capital_D">
-                                <input name="submit" type="submit" value="submit" class="btn btn-primary">
+                                <center><input name="submit" type="submit" value="submit" class="btn btn-primary"></center>
                               </form>
                             </div>
                           </div>
