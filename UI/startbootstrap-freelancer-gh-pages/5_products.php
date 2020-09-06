@@ -61,7 +61,7 @@ echo '<!DOCTYPE html>
                         <img class="card-img-top" src="assets/img/portfolio/bond - Copy.png" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Bonds</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>
+                          <p class="card-text">Goldman Sachs’ Bond Fund invests in fixed income securities such as US government securities and corporate debt securities.</p>
                           <a href="#" class="btn btn-primary">Find out more</a>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ echo '<!DOCTYPE html>
                         <img class="card-img-top" src="assets/img/portfolio/deposit - Copy.png" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Fixed Deposit</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>
+                          <p class="card-text">Goldman Sachs’ Real Estate Securities Fund invests in a portfolio of equity investments whose issuers are involved in the real estate industry.</p>
                           <a href="#" class="btn btn-primary">Find out more</a>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ echo '<!DOCTYPE html>
                         <img class="card-img-top" src="assets/img/portfolio/reit - Copy.png" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">REITS</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>
+                          <p class="card-text">Goldman Sachs’ High Yield Certificate of Deposits are a secure form of time deposit, where money must stay in the bank for a certain length of time to earn a promised return.</p>
                           <a href="#" class="btn btn-primary">Find out more</a>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ echo '<!DOCTYPE html>
                         <img class="card-img-top" src="assets/img/portfolio/stock-market - Copy.png" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">Stocks</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>
+                          <p class="card-text">Goldman Sachs’ investment team helps develop insights and strategies to maximise profits equal to how much stock they own.</p>
                           <a href="#" class="btn btn-primary">Find out more</a>
                         </div>
                     </div>
@@ -100,7 +100,7 @@ echo '<!DOCTYPE html>
                     <input type="hidden" name="achievement" value="' . $achievement . '">
                     <input type="hidden" name="investment" value="'. $investment .'">
                     <input type="hidden" name="capital" value="'. $capital .'">
-                    <input type="submit" name="submit" class="btn btn-primary btn-xl" value="Sign up now for more information!" >
+                    <input type="submit" name="submit" class="btn btn-primary btn-xl" value="Begin Journey!" >
                 </form>
             </div> 
         </section>
@@ -130,7 +130,18 @@ echo '<!DOCTYPE html>
                                     <!-- Portfolio Modal - Image-->
                                     <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="" /> -->
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-5">The Goldman Sachs Bond Fund seeks to help investors achieve high yield while managing their risks. It also has high liquidity due to its low volatility.
+                                    <br><br>
+                                      Average Annual Total Return (for period ended Dec 31 2019)<br>
+                                      1 year = 5.96%<br>
+                                        5 years = 1.92%<br>
+                                        10 years = 3.67%<br><br>
+                                        
+                                      Capital: Minimum of $1,000
+                                        <br>
+                                      Risk: Conservative 
+                                        <br>
+                                      Strategy: Yield</p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -164,7 +175,15 @@ echo '<!DOCTYPE html>
                                     <!-- Portfolio Modal - Image-->
                                     <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="" /> -->
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-5">The Goldman Sachs Real Estate Securities Fund provides an attractive yield and high growth potential in the long term due to its strong historical annual returns. It also serves as a hedge against inflation and provides interest rate resiliency.
+                                    <br><br>
+                                    Average Annual Total Return (for period ended Dec 31 2019)<br>
+                                    1 year = 18.62%<br>
+                                    5 years = 4.49%<br>
+                                    10 years = 10.32%<br><br>
+                                    Capital: Minimum of $1,000<br>
+                                    Risk: Moderate<br>
+                                    Strategy: Yield</p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -198,7 +217,14 @@ echo '<!DOCTYPE html>
                                     <!-- Portfolio Modal - Image-->
                                     <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" /> -->
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-5">A High Yield CD can be a useful tool for long- term financial goals such as renovation, child’s future education
+
+                                    <br>10 Day CD Rate Guarantee (If rate goes up, you will get the new improved rate automatically)<br><br>
+                                    
+                                    Capital: Minimum of $500<br>
+                                    Expected Return: 0.45% - 0.90% APY<br>
+                                    Risk: Conservative<br>
+                                    Strategy: Yield</p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -232,7 +258,13 @@ echo '<!DOCTYPE html>
                                     <!-- Portfolio Modal - Image-->
                                     <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" /> -->
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-5">Goldman Sachs’ analyst’s recommendation and stock pick lists the most recent publicly-reported stock recommendations and ratings issued by analysts at Goldman Sachs Group.
+                                    <br>*The stock list is non exhaustive.<br><br>
+                                    
+                                    Capital: Prices as listed<br>
+                                    Expected Returns: YTD on individual stocks<br>
+                                    Risk: Aggressive<br>
+                                    Strategy: Capital Gain</p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
