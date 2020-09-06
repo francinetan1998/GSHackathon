@@ -2,6 +2,8 @@
 
 require_once 'include/common.php';
 
+if(isset($_SESSION["loggedin"])) {
+
 $results_string = "";
 if(isset($_SESSION['results'])){
     $results_string = $_SESSION['results'];
@@ -440,6 +442,12 @@ echo '<!DOCTYPE html>
 </body>
 
 </html>';
+
+} else {
+  $_SESSION["errors"] = "Please log in first!";
+  header("Location: 1b_login.php");
+  return;
+}
 
 
 ?>

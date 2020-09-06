@@ -3,9 +3,9 @@
 class ConnectionManager {
 
     public function getConnection() {
-        $servername = 'localhost';
-        $username = 'root';
-        $password = '';
+        $servername = 'ec2-18-140-60-54.ap-southeast-1.compute.amazonaws.com';
+        $username = 'admin';
+        $password = '!QAZ2wsx';
         $dbname = 'gshdb';
         
         // Create connection

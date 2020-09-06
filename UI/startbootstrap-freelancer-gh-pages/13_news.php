@@ -2,6 +2,8 @@
 
 require_once 'include/common.php';
 
+if(isset($_SESSION["loggedin"])) {
+
 $results = json_decode(callAPI("http://newsapi.org/v2/top-headlines?country=us&category=business&sortBy=publishedAt&apiKey=daa1f687c4e149de9f5a46ab6604003c"), true);
 
 $newsString = "";
@@ -461,5 +463,12 @@ echo '<!DOCTYPE html>
 </body>
 
 </html>';
+
+} else {
+  $_SESSION["errors"] = "Please log in first!";
+  header("Location: 1b_login.php");
+  return;
+}
+
 
 ?>
