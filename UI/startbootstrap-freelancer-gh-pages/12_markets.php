@@ -2,12 +2,10 @@
 
 require_once 'include/common.php';
 
-$results = json_decode(callAPI("http://newsapi.org/v2/top-headlines?country=us&category=business&sortBy=publishedAt&apiKey=daa1f687c4e149de9f5a46ab6604003c"), true);
-
-$newsString = "";
-
-foreach ($results["articles"] as $row) {
-    $newsString .= "<tr><td>" . $row["source"]["name"] . "</td><td>" . date('d M Y H:i:s', strtotime($row["publishedAt"])) . "</td><td>" . $row["title"] . "</td><td><a href='" . $row["url"] . "'>" . $row["url"] . "</a></td></tr>";
+$results_string = "";
+if(isset($_SESSION['results'])){
+    $results_string = $_SESSION['results'];
+    unset($_SESSION['results']);
 }
 
 echo '<!DOCTYPE html>
@@ -29,9 +27,6 @@ echo '<!DOCTYPE html>
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this page -->
-  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -374,40 +369,31 @@ echo '<!DOCTYPE html>
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">News</h1>
-          <p class="mb-4">Keeping current on important news is more critical than ever, especially if you have investments that are easily affected by world news. The difficult part is having them all scattered over various websites. Dont\'t worry, we\'ve collated all business-related news centrally here just for you!</p>
+            <!-- Page Heading -->
+            <h1 class="h3 mb-4 text-gray-800">Market</h1>
 
-          <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Latest Business News</h6>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Source</th>
-                      <th>Published At</th>
-                      <th>Title</th>
-                      <th>For more information</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                        <th>Source</th>
-                        <th>Published At</th>
-                        <th>Title</th>
-                        <th>For more information</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                    ' . $newsString . '
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            <p class="mb-4">Search for stocks information!</p>
+
+            <form method="POST" action="processStockSearch.php" >
+                <div class="main">
+            
+                <!-- Another variation with a button -->
+                <div class="input-group">
+            
+                    <input name="symbol" type="text" class="form-control" placeholder="Search for a stock based on its symbol">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                
+                    </div>
+                </div>
+            </form>
+
+            <br>
+            
+            ' . $results_string . '
+
           </div>
 
         </div>
@@ -466,15 +452,9 @@ echo '<!DOCTYPE html>
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
-  <!-- Page level plugins -->
-  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/datatables-demo.js"></script>
-
 </body>
 
 </html>';
+
 
 ?>

@@ -23,23 +23,8 @@ function printErrors() {
     return $error_string;
 }
 
-function callAPI($method, $url, $data){
+function callAPI($url){
     $curl = curl_init();
-    switch ($method){
-       case "POST":
-          curl_setopt($curl, CURLOPT_POST, 1);
-          if ($data)
-             curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
-          break;
-       case "PUT":
-          curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "PUT");
-          if ($data)
-             curl_setopt($curl, CURLOPT_POSTFIELDS, $data);			 					
-          break;
-       default:
-          if ($data)
-             $url = sprintf("%s?%s", $url, http_build_query($data));
-    }
  
     // OPTIONS:
     curl_setopt($curl, CURLOPT_URL, $url);
@@ -52,9 +37,11 @@ function callAPI($method, $url, $data){
  
     // EXECUTE:
     $result = curl_exec($curl);
-    if(!$result){ die("Connection Failure"); }
-    curl_close($curl);
-    return $result;
+
+    echo $result;
+    // if(!$result){ die("Connection Failure"); }
+    // curl_close($curl);
+    // return $result;
  }
 
 ?>

@@ -85,6 +85,29 @@ class AccountDAO {
         return $returnMsg;
 
     }
+
+    public function toRecommend($invesment, $achievement, $capital) {
+        
+        $connMgr = new ConnectionManager();
+        $pdo = $connMgr->getConnection();
+        
+        $sql = "SELECT * FROM points";
+        $stmt = $pdo->prepare($sql);
+
+         $stmt->setFetchMode(PDO::FETCH_ASSOC);
+         $status = $stmt->execute();
+
+         while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+            $rules[$row['category'] . "_" . $row['opt']] = $row['points'];
+        }
+
+        $total = $rules[$invesment] + $rules[$achievement] + $rules[$capital];
+
+        $stmt = null;
+        $pdo = null;
+
+
+    }
 }
 
 ?>
