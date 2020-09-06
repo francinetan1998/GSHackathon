@@ -67,10 +67,10 @@ echo '<!DOCTYPE html>
                     </div>
                     &nbsp&nbsp&nbsp&nbsp&nbsp
                     <div class="card" style="width: 17rem;" data-toggle="modal" data-target="#portfolioModal2">
-                        <img class="card-img-top" src="assets/img/portfolio/deposit - Copy.png" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/portfolio/certificate.png" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Fixed Deposit</h5>
-                          <p class="card-text">Goldman Sachs’ Real Estate Securities Fund invests in a portfolio of equity investments whose issuers are involved in the real estate industry.</p>
+                          <h5 class="card-title">Certificate of Deposit</h5>
+                          <p class="card-text">Goldman Sachs’ High Yield Certificate of Deposits are a secure form of time deposit, where money must stay in the bank for a certain length of time to earn a promised return.</p>
                           <a href="#" class="btn btn-primary">Find out more</a>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ echo '<!DOCTYPE html>
                         <img class="card-img-top" src="assets/img/portfolio/reit - Copy.png" alt="Card image cap">
                         <div class="card-body">
                           <h5 class="card-title">REITS</h5>
-                          <p class="card-text">Goldman Sachs’ High Yield Certificate of Deposits are a secure form of time deposit, where money must stay in the bank for a certain length of time to earn a promised return.</p>
+                          <p class="card-text">Goldman Sachs’ Real Estate Securities Fund invests in a portfolio of equity investments whose issuers are involved in the real estate industry.</p>
                           <a href="#" class="btn btn-primary">Find out more</a>
                         </div>
                     </div>
@@ -175,15 +175,16 @@ echo '<!DOCTYPE html>
                                     <!-- Portfolio Modal - Image-->
                                     <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="" /> -->
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">The Goldman Sachs Real Estate Securities Fund provides an attractive yield and high growth potential in the long term due to its strong historical annual returns. It also serves as a hedge against inflation and provides interest rate resiliency.
-                                    <br><br>
-                                    Average Annual Total Return (for period ended Dec 31 2019)<br>
-                                    1 year = 18.62%<br>
-                                    5 years = 4.49%<br>
-                                    10 years = 10.32%<br><br>
-                                    Capital: Minimum of $1,000<br>
-                                    Risk: Moderate<br>
+                                    <p class="mb-5">A High Yield CD can be a useful tool for long- term financial goals such as renovation, child’s future education
+
+                                    <br>10 Day CD Rate Guarantee (If rate goes up, you will get the new improved rate automatically)<br><br>
+                                    
+                                    Capital: Minimum of $500<br>
+                                    Expected Return: 0.45% - 0.90% APY<br>
+                                    Risk: Conservative<br>
                                     Strategy: Yield</p>
+
+                                    
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -217,14 +218,17 @@ echo '<!DOCTYPE html>
                                     <!-- Portfolio Modal - Image-->
                                     <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" /> -->
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">A High Yield CD can be a useful tool for long- term financial goals such as renovation, child’s future education
-
-                                    <br>10 Day CD Rate Guarantee (If rate goes up, you will get the new improved rate automatically)<br><br>
-                                    
-                                    Capital: Minimum of $500<br>
-                                    Expected Return: 0.45% - 0.90% APY<br>
-                                    Risk: Conservative<br>
+                                    <p class="mb-5">The Goldman Sachs Real Estate Securities Fund provides an attractive yield and high growth potential in the long term due to its strong historical annual returns. It also serves as a hedge against inflation and provides interest rate resiliency.
+                                    <br><br>
+                                    Average Annual Total Return (for period ended Dec 31 2019)<br>
+                                    1 year = 18.62%<br>
+                                    5 years = 4.49%<br>
+                                    10 years = 10.32%<br><br>
+                                    Capital: Minimum of $1,000<br>
+                                    Risk: Moderate<br>
                                     Strategy: Yield</p>
+
+
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
