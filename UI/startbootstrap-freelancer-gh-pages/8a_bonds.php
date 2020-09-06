@@ -1,4 +1,7 @@
 <?php
+require_once 'include/common.php';
+
+if(isset($_SESSION["loggedin"])) {
 echo '
 <!DOCTYPE html>
 <html lang="en">
@@ -328,7 +331,7 @@ echo '
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">User</span>
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
@@ -597,4 +600,9 @@ echo '
 </body>
 
 </html>';
+} else {
+  $_SESSION["errors"] = "Please log in first!";
+  header("Location: 1b_login.php");
+  return;
+}
 ?>
