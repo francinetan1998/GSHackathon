@@ -1,5 +1,9 @@
 <?php
-echo '
+
+require_once 'include/common.php';
+
+if(isset($_SESSION["loggedin"])) {
+  echo '
 <!DOCTYPE html>
 <html lang="en">
 
@@ -707,4 +711,11 @@ echo '
 </body>
 
 </html>';
+} else {
+  $_SESSION["errors"] = "Please log in first!";
+  header("Location: 1b_login.php");
+  return;
+}
+
+
 ?>

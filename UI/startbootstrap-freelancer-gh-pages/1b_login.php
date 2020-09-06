@@ -2,6 +2,8 @@
 
 require_once 'include/common.php';
 
+unset($_SESSION["loggedin"]);
+
 $error_string = printErrors();
 
 echo '
