@@ -38,10 +38,9 @@ function callAPI($url){
     // EXECUTE:
     $result = curl_exec($curl);
 
-    echo $result;
-    // if(!$result){ die("Connection Failure"); }
-    // curl_close($curl);
-    // return $result;
+    if(!$result){ die("Connection Failure"); }
+    curl_close($curl);
+    return $result;
  }
 
 ?>
