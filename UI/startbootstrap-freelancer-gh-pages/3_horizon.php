@@ -111,7 +111,7 @@ echo '
                     <br>
                     <div class="row">
                         <div class="card" style="width: 15rem;">
-                            <img class="card-img-top" src="assets/img/portfolio/circus.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/img/portfolio/time.jpg" alt="Card image cap">
                             <div class="card-body">
                               <p class="card-text"><center><strong>Less than 1 year</strong></center></p>
                               <form method="POST" action="4_capital.php">
@@ -123,7 +123,7 @@ echo '
                         </div>
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                         <div class="card" style="width: 15rem;">
-                            <img class="card-img-top" src="assets/img/portfolio/circus.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/img/portfolio/time.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text"><center><strong>1 - 5 years</strong></center></p>
                                 <form method="POST" action="4_capital.php">
@@ -135,7 +135,7 @@ echo '
                           </div>
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           <div class="card" style="width: 15rem;">
-                            <img class="card-img-top" src="assets/img/portfolio/circus.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/img/portfolio/time.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text"><center><strong>6 - 10 years</strong></center></p>
                                 <form method="POST" action="4_capital.php">
@@ -147,7 +147,7 @@ echo '
                           </div>
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           <div class="card" style="width: 15rem;">
-                            <img class="card-img-top" src="assets/img/portfolio/circus.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/img/portfolio/time.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text"><center><strong>More than 10 years</strong></center></p>
                                 <form method="POST" action="4_capital.php">

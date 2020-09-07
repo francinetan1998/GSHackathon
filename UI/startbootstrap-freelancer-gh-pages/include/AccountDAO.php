@@ -64,7 +64,7 @@ class AccountDAO {
 
         $total = $rules[$invesment] + $rules[$achievement] + $rules[$capital];
 
-        $sql = "INSERT INTO ACCOUNT (fullname, email, pass, points) values (:fullname, :email, :pass, :points)";
+        $sql = "INSERT INTO account (fullname, email, pass, points) values (:fullname, :email, :pass, :points)";
         $stmt = $pdo->prepare($sql);
         $stmt->bindParam(":fullname", $fullname, PDO::PARAM_STR);
         $stmt->bindParam(":email", $email, PDO::PARAM_STR);

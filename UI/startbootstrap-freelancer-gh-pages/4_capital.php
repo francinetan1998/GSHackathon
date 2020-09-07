@@ -114,7 +114,7 @@ echo '
                     <br>
                     <div class="row">
                         <div class="card" style="width: 15rem;">
-                            <img class="card-img-top" src="assets/img/portfolio/safe.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/img/portfolio/first.jpg" alt="Card image cap">
                             <div class="card-body">
                               <p class="card-text"><center><strong>Less than $10K</strong></center></p>
                               <form method="POST" action="5_products.php">
@@ -127,7 +127,7 @@ echo '
                         </div>
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                         <div class="card" style="width: 15rem;">
-                            <img class="card-img-top" src="assets/img/portfolio/safe.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/img/portfolio/second.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text"><center><strong>10K - 75K</strong></center></p>
                                 <form method="POST" action="5_products.php">
@@ -140,7 +140,7 @@ echo '
                           </div>
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           <div class="card" style="width: 15rem;">
-                            <img class="card-img-top" src="assets/img/portfolio/safe.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/img/portfolio/third.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text"><center><strong>75K - 150K</strong></center></p>
                                 <form method="POST" action="5_products.php">
@@ -153,7 +153,7 @@ echo '
                           </div>
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           <div class="card" style="width: 15rem;">
-                            <img class="card-img-top" src="assets/img/portfolio/safe.png" alt="Card image cap">
+                            <img class="card-img-top" src="assets/img/portfolio/fourth.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text"><center><strong>Above 150K</strong></center></p>
                                 <form method="POST" action="5_products.php">
