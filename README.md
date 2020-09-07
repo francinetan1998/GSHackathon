@@ -20,15 +20,15 @@ Ensure that the database parameters (located at include/ConnectionManager.php) h
 
 ```python
 public function getConnection() {
-	# Modify the following parameters
-    $servername = 'db_server_name';
-    $username = 'db_username';
-    $password = '!db_password';
-    $dbname = 'gshdb';
+  # Modify the following parameters
+  $servername = 'db_server_name';
+  $username = 'db_username';
+  $password = '!db_password';
+  $dbname = 'gshdb';
 
-    . . .
+  . . .
 
-    }
+}
 ```
 
 ## Live view 
